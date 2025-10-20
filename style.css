@@ -1,0 +1,116 @@
+/* Reset basic margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General page styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Header */
+#header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  letter-spacing: 1px;
+}
+
+#header hr {
+  border: none;
+  height: 2px;
+  background-color: #2c3e50;
+  margin: 10px auto;
+  width: 60%;
+}
+
+#header b {
+  color: #3498db;
+}
+
+/* Layout for main section */
+main {
+  display: flex;
+  gap: 30px;
+}
+
+/* Left column */
+#mainLeft {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#mainLeft h2 {
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+#mainLeft p, 
+#mainLeft a {
+  font-size: 0.95rem;
+  color: #333;
+  text-decoration: none;
+}
+
+#mainLeft a:hover {
+  text-decoration: underline;
+}
+
+/* Right column */
+#mainRight {
+  flex: 2;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#mainRight h2 {
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+#mainRight p {
+  margin-bottom: 10px;
+}
+
+#mainRight ul {
+  margin-left: 20px;
+  list-style-type: square;
+}
+
+/* Icons (optional, if you include Font Awesome properly) */
+i {
+  margin-right: 8px;
+  color: #3498db;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  #mainLeft, #mainRight {
+    width: 100%;
+  }
+}
